@@ -29,8 +29,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Get a network listener on address "localhost:12345".
-	opts := weaver.ListenerOptions{LocalAddress: "localhost:12345"}
+	// Get a network listener on address "0.0.0.0:12345".
+	opts := weaver.ListenerOptions{LocalAddress: "0.0.0.0:12345"}
 	listener, err := root.Listener("hello", opts)
 	if err != nil {
 		log.Fatal(err)

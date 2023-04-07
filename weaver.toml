@@ -1,2 +1,11 @@
 [serviceweaver]
-binary = "./weaver-start"
+name = "weaver-start"
+binary = "./weaver-start.exe"
+
+[gke]
+regions = ["asia-northeast3"]
+public_listener = [
+  {name = "weaver-start", hostname = "0.0.0.0:12345"},
+]
+
+
