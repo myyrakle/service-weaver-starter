@@ -15,3 +15,5 @@
 # vendor/
 
 weaver_gen.go
+
+weaver-start
