@@ -6,7 +6,7 @@ binary = "./weaver-start"
 [gke]
 regions = ["asia-northeast3"]
 public_listener = [
-  {name = "weaver-start", hostname = "0.0.0.0:12345"},
+  {name = "weaver-start", hostname = "weaver.myyrakle.com"},
 ]
 
 
