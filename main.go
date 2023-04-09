@@ -37,6 +37,11 @@ func main() {
 	}
 	fmt.Printf("hello listener available on %v\n", listener)
 
+	// Health Check
+	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
+		fmt.Fprintf(writer, "OK")
+	})
+
 	// Serve the /hello endpoint.
 	http.HandleFunc("/hello", func(writer http.ResponseWriter, request *http.Request) {
 		name := request.URL.Query().Get("name")
