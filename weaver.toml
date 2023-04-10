@@ -1,7 +1,8 @@
 [serviceweaver]
 name = "weaver-start"
-binary = "./weaver-start"
-# binary = "./weaver-start.exe"
+# binary = "./weaver-start"
+binary = "./weaver-start.exe"
+rollout = "3m"
 
 [gke]
 regions = ["asia-northeast3"]
